@@ -1,0 +1,460 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #660000;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header .logo {
+    color: #8C7342;
+    font-size: 2cm;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 5px 5px rgb(0, 0, 0);
+}
+
+header .navbar {
+    display: flex;
+    gap: 30px;
+}
+
+header .navbar a {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #F2EFE9;
+    font-weight: 600;
+    border-radius: 25%;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+header .navbar li a:hover {
+    border: 2px solid #F2EFE9;
+}
+
+/* Seccion Inicio */
+.inicio {
+    position: relative;
+    max-width: 630px;
+    height: 30vh;
+}
+
+.inicio .contenido {
+    position: relative;
+    right: -20%;
+    transform: translate(5%, 65%);
+    z-index: 1;
+}
+
+.inicio .contenido h1 {
+    color: #ffffff;
+    font-family: 'Rammetto One', cursive;
+    font-size: 3.2cm;
+    font-weight: 850;
+    margin-bottom: 5px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inicio .contenido p {
+    color: #F2EFE9;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.inicio .contenido a {
+    color: #F2EFE9;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.inicio .contenido a:hover {
+    color: #F2EFE9;
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+
+.bgColor {
+    position: absolute;
+    filter: blur(150px);
+    opacity: 0.5;
+}
+
+.inicio .bgColor:nth-child(1) {
+    background: #000000;
+    top: -150px;
+    left: -110px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.inicio .bgColor:nth-child(2) {
+    background: #ffffff;
+    top: 300px;
+    right: -750px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.img8x {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img8x img {
+    position: relative;
+    right: -870px;
+    top: -150px;
+    width: 400px;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    50%, 100% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+/* Seccion Categoria */
+.tituloCategorias {
+    position: relative;
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 400px;
+}
+
+.tituloCategorias h2 {
+    color: #ffffff;
+    font-family: 'Rammetto One', cursive;
+    font-size: 2.5cm;
+    font-weight: 800;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skins .tienda {
+    position: relative;
+    top: -100px; 
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 300px;
+}
+
+.skins .tienda .card {
+    position: relative;
+    width: 250px;
+    height: 280px; 
+    margin: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.skins .tienda .card .contenidocard {
+    text-align: center;
+}
+
+.skins .tienda .card .img {
+    width: 200px;
+    height: 200px;
+    transform: rotate(25deg);
+    padding: 10px;
+}
+
+.skins .tienda .card .img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.skins .tienda .card .img {
+    width: 200px;
+    height: 200px;
+}
+
+.categorias .tienda .card .contenidocard span { 
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.categorias .tienda .card .contenidocard p {
+    color: #000000;
+    font-weight: 600;
+}
+
+.categorias .tienda .card:hover {
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.categorias .bgColor:nth-child(1) {
+    background: #F2EFE9;
+    top: 1000px;
+    left: -150px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+/* Seccion Vendidos */
+
+    .tituloVendidos {
+        position: relative;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloVendidos h2 {
+        color: #8C7342;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.7cm;
+        font-weight: 100;
+        text-shadow: 0 10px 10px rgba(255, 253, 253, 0.5);
+    }
+
+    .vendidos {
+        position: relative;
+        width: 50%;
+        height: 65vh;
+    }
+
+    .vendidos .tienda {
+        position: relative;
+        top: -270;
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 100px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        padding: 160px;
+    }
+
+    .vendidos .tienda .card {
+        position: relative;
+        width: 270px;
+        height: 350px;
+        backdrop-filter: blur(10px);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 12px 89px rgba(22, 22, 22, 1);
+        margin: 20px;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vendidos .tienda .card .contenidocard {
+        text-align: center;
+    }
+
+    .vendidos .tienda .card .contenidocard spam {
+        font-size: 1.3em;
+        color: #8C7342;
+        font-weight: 800;
+    }
+
+    .vendidos .tienda .card .contenidocard p {
+        color: #000000;
+        font-weight: 500;
+        font-size: 1em;
+        margin: 5px 0 20px 0;
+    }
+
+    .vendidos .tienda .card .contenidocard a {
+        color: #a8b9bf;
+        background-color: #660000;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px    ;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .vendidos .tienda .card .img {
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .vendidos .tienda .card .img {
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .vendidos .tienda .card .img {
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .vendidos .tienda .card:hover img {
+            transform: translateY(-10px);
+    }
+
+    .vendidos .tienda .card .contenidocard a:hover {
+        background: #660000;
+    }
+
+    .vendidos .bgColor {
+        background: #660000;
+        top: 50px;
+        right: -150px;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 140px;
+    }
+
+    footer .logojuego {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logojuego .logo {
+        color: #000000;
+        font-size: 2cm;
+        font-weight: 700;
+        text-decoration: none;
+        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        padding-bottom: 10px;
+    }
+
+    footer .logojuego p {
+        color: #8C7342;
+        list-style: 1.2;
+        font-weight: 600;
+    }
+
+    footer .sobrenosotros {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .sobrenosotros p {
+        color: #000000;
+        font-size: 17px;
+        font-weight: 800px;
+        padding-bottom: 10px;
+    }
+
+    footer .sobrenosotros a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    footer .sobrenosotros a:hover {
+        color: #660000;
+    }
+
+     footer .redessociales p {
+        color: #8C7342;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    footer .redessociales a {
+        color: #8C7342;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    footer .redessociales a i {
+        margin-right: 5px;
+        color: #8C7342;
+    }
+
+/* Copyright */
+    .copyright {
+        position: absolute;
+    }
+
+    .copyright p {
+        color: #000000;
+        font-size: 14px;
+        margin: 30px;
+        text-align: center;
+    }
